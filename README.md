@@ -1,16 +1,102 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Ant Design, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Landing Page**: Eye-catching hero banner with a beautiful gradient background
+- **AI Chatbot**: Interactive chat interface where visitors can chat with an AI version of you
+- **Resume Page**: Professional resume display with download functionality
+- **Projects Page**: Showcase your projects with descriptions, technologies, and links
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Ant Design 6.3
+- React Router DOM 7.13
+- Vite (Build tool)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/purplehays09/portfolio-website.git
+cd portfolio-website
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## Customization
+
+### Personal Information
+
+Update the following files with your personal information:
+
+1. **Resume Page** (`src/pages/Resume.jsx`):
+   - Replace "Your Name" with your actual name
+   - Update contact information (email, phone, LinkedIn, GitHub)
+   - Customize skills, experience, education, and certifications
+   - Add your actual resume PDF to the `public` folder and update the download function
+
+2. **Projects Page** (`src/pages/Projects.jsx`):
+   - Update project information with your actual projects
+   - Replace placeholder images with your project screenshots
+   - Update GitHub and demo links
+
+3. **Home Page** (`src/pages/Home.jsx`):
+   - Customize the hero banner text
+   - Update the AI chatbot responses to match your personality and experience
+
+### Styling
+
+The website uses Ant Design components. You can customize the theme by:
+- Modifying the gradient colors in the hero banner
+- Adjusting component styles in the individual page files
+- Updating the global styles in `src/index.css`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## License
+
+MIT
+
+## Author
+
+Update with your information
+
