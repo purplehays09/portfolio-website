@@ -1,6 +1,6 @@
 import React, {  } from 'react'
 import { Card } from 'antd';
-import ReactCardFlip from 'react-card-flip';
+// import ReactCardFlip from 'react-card-flip';
 
 
 export default function PlayingCard() {
