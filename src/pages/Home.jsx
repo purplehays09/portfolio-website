@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Layout, Typography, Input, Card, Button, Avatar, Space } from 'antd';
 import { RobotOutlined, SendOutlined, UserOutlined } from '@ant-design/icons';
+import axios from 'axios';
 
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -10,7 +11,7 @@ function Home() {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
-      content: "Hi! I'm the AI version of the portfolio owner. Ask me anything about my experience, skills, or try to convince me to join your company!"
+      content: "Hi! I'm David Hays, just a regular human who built an AI version of myself to chat with you. Ask me anything about my experience, skills, or try to convince me to join your company! (Or you know, Star Wars, TTRPGs, or my personality)"
     }
   ]);
   const [inputValue, setInputValue] = useState('');
@@ -27,25 +28,28 @@ function Home() {
     setMessages([...messages, userMessage]);
     setInputValue('');
     setIsLoading(true);
+    const uri = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:5555';
 
     // Simulate AI response
-    setTimeout(() => {
-      const aiResponses = [
-        "That's a great question! I have extensive experience in full-stack development with React, Node.js, and modern web technologies.",
-        "I'm passionate about creating user-friendly applications and solving complex problems. I'd love to hear more about your company!",
-        "I have a strong background in software engineering with a focus on scalable and maintainable code. What kind of projects does your team work on?",
-        "Thank you for your interest! I'm always excited about new opportunities. Could you tell me more about the role and your company culture?",
-        "I specialize in building responsive web applications with modern frameworks. I'm particularly interested in companies that value innovation and continuous learning."
-      ];
-      
-      const randomResponse = aiResponses[Math.floor(Math.random() * aiResponses.length)];
-      
-      setMessages(prev => [...prev, {
-        role: 'ai',
-        content: randomResponse
-      }]);
-      setIsLoading(false);
-    }, 1000);
+    axios.post(`${uri}/api/personal_response`, { message: inputValue })
+      .then(response => {
+        const aiMessage = {
+          role: 'ai',
+          content: response.data.response
+        };
+        setMessages(prevMessages => [...prevMessages, aiMessage]);
+      })
+      .catch(error => {
+        console.error('Error fetching AI response:', error);
+        const errorMessage = {
+          role: 'ai',
+          content: "Sorry, something went wrong. Please try again."
+        };
+        setMessages(prevMessages => [...prevMessages, errorMessage]);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -63,10 +67,10 @@ function Home() {
         }}>
           <div>
             <Title level={1} style={{ color: 'white', fontSize: '3rem', marginBottom: '20px' }}>
-              Welcome to My Portfolio
+              Hi, I'm David Hays
             </Title>
             <Paragraph style={{ color: 'white', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
-              Software Developer | Problem Solver | Tech Enthusiast
+              Full-Stack Software Engineer | Ruby on Rails & React Specialist | Building Scalable Solutions
             </Paragraph>
           </div>
         </div>
@@ -78,10 +82,11 @@ function Home() {
           padding: '20px'
         }}>
           <Title level={2} style={{ textAlign: 'center', marginBottom: '30px' }}>
-            Chat with AI Me
+            Let's Talk
           </Title>
           <Paragraph style={{ textAlign: 'center', marginBottom: '30px' }}>
-            Try to learn about me or convince me to join your company!
+            Ask me about my work at Posabit, Tuft & Needle, or my experience building AI-powered systems, 
+            real-time applications, and eCommerce platforms. Or try to convince me why I should join your team!
           </Paragraph>
 
           <Card 

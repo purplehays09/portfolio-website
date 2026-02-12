@@ -11,7 +11,7 @@ function Navigation() {
     {
       key: '/',
       icon: <HomeOutlined />,
-      label: <Link to="/">Home</Link>,
+      label: <Link to="/">Chat</Link>,
     },
     {
       key: '/resume',
@@ -41,7 +41,7 @@ function Navigation() {
         fontWeight: 'bold',
         marginRight: '50px'
       }}>
-        Portfolio
+        David Hays
       </div>
       <Menu
         theme="dark"
