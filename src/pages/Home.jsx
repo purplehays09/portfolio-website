@@ -195,9 +195,9 @@ function Home() {
           </Card>
         </div>
 
-        <Flex >
+        {/* <Flex >
           <PlayingCard suit="spades" rank="ace" />
-        </Flex>
+        </Flex> */}
       </Content>
     </Layout>
   );
