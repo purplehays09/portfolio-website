@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Layout, Typography, Input, Card, Button, Avatar, Space } from 'antd';
+import { Layout, Typography, Input, Card, Button, Avatar, Space, Flex } from 'antd';
 import { RobotOutlined, SendOutlined, UserOutlined } from '@ant-design/icons';
 import axios from 'axios';
+import PlayingCard from '../components/PlayingCard';
 
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -67,7 +68,7 @@ function Home() {
         }}>
           <div>
             <Title level={1} style={{ color: 'white', fontSize: '3rem', marginBottom: '20px' }}>
-              Hi, I'm David Hays
+              David Hays
             </Title>
             <Paragraph style={{ color: 'white', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
               Full-Stack Software Engineer | Ruby on Rails & React Specialist | Building Scalable Solutions
@@ -86,7 +87,7 @@ function Home() {
           </Title>
           <Paragraph style={{ textAlign: 'center', marginBottom: '30px' }}>
             Ask me about my work at Posabit, Tuft & Needle, or my experience building AI-powered systems, 
-            real-time applications, and eCommerce platforms. Or try to convince me why I should join your team!
+            real-time applications, and eCommerce platforms. Ask me what I can bring to your team, or just say hi!
           </Paragraph>
 
           <Card 
@@ -193,6 +194,10 @@ function Home() {
             </Space.Compact>
           </Card>
         </div>
+
+        <Flex >
+          <PlayingCard suit="spades" rank="ace" />
+        </Flex>
       </Content>
     </Layout>
   );

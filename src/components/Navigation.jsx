@@ -1,5 +1,5 @@
 import { Layout, Menu } from 'antd';
-import { HomeOutlined, FileTextOutlined, ProjectOutlined } from '@ant-design/icons';
+import { HomeOutlined, UserOutlined, FileTextOutlined, ProjectOutlined } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 
 const { Header } = Layout;
@@ -12,6 +12,11 @@ function Navigation() {
       key: '/',
       icon: <HomeOutlined />,
       label: <Link to="/">Chat</Link>,
+    },
+    {
+      key: '/about',
+      icon: <UserOutlined />,
+      label: <Link to="/about">About</Link>,
     },
     {
       key: '/resume',
