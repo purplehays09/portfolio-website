@@ -32,7 +32,7 @@ function Projects() {
       impact: 'This project demonstrates product rescue, distributed system thinking, and scalable frontend delivery architecture. It moved the company from a failing implementation to a maintainable, white-label eCommerce platform.',
       technologies: ['Ruby on Rails', 'React.js', 'Sinatra', 'CDN', 'WordPress', 'JavaScript'],
       site: 'https://menu.trippyhippiecannabis.com',
-      image: '/public/Screenshot 2026-02-13 at 9.15.06 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.15.06 AM.png'
     },
     {
       title: 'Inventory Normalization & Product Aggregation Engine',
@@ -59,7 +59,7 @@ function Projects() {
       impact: 'This wasn\'t just a refactor. It was translating operational retail data into a customer-facing commerce model. It shows deep relational thinking and the ability to reconcile conflicting data paradigms inside a live production system.',
       technologies: ['Ruby on Rails', 'PostgreSQL', 'Data Modeling', 'SQL Optimization', 'Schema Design'],
       site: 'https://menu.trippyhippiecannabis.com',
-      image: '/public/Screenshot 2026-02-13 at 9.26.26 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.26.26 AM.png'
     },
     {
       title: 'AI-Powered Natural Language Action Engine',
@@ -91,7 +91,7 @@ function Projects() {
       technologies: ['Ruby on Rails', 'OpenAI API', 'Service Objects', 'JSON Schema', 'REST API'],
       github: 'https://github.com/purplehays09/rails-backend/tree/main',
       site: 'https://web-app-kappa-five.vercel.app/demo',
-      image: '/public/Screenshot 2026-02-13 at 9.35.19 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.35.19 AM.png'
     },
     {
       title: 'Enterprise-Scale RPG Character Management System',
@@ -123,7 +123,7 @@ function Projects() {
       technologies: ['Ruby on Rails 6+', 'ActiveRecord', 'ActionCable', 'WebSockets', 'PostgreSQL'],
       github: 'https://github.com/purplehays09/web-app/tree/main',
       site: 'https://web-app-kappa-five.vercel.app',
-      image: '/public/Screenshot 2026-02-13 at 9.50.35 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.50.35 AM.png'
     },
     {
       title: 'Modular Seed Data & World-Building Pipeline',
@@ -151,7 +151,7 @@ function Projects() {
       technologies: ['Ruby', 'Rails Seeds', 'PostgreSQL', 'Factory Patterns', 'Data Architecture'],
       github: 'https://github.com/purplehays09/rails-backend/tree/main',
       site: 'https://web-app-kappa-five.vercel.app',
-      image: '/public/Screenshot 2026-02-13 at 9.51.52 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.51.52 AM.png'
     },
     {
       title: 'Real-Time Multiplayer Campaign Dashboard',
@@ -179,7 +179,7 @@ function Projects() {
       technologies: ['React', 'Redux Toolkit', 'ActionCable', 'WebSockets', 'Ant Design'],
       github: 'https://github.com/purplehays09/web-app/tree/main',
       site: 'https://web-app-kappa-five.vercel.app',
-      image: '/public/Screenshot 2026-02-13 at 9.53.00 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.53.00 AM.png'
     },
     {
       title: 'Dynamic Multi-Step Character Creation Wizard',
@@ -207,7 +207,7 @@ function Projects() {
       technologies: ['React', 'Redux Toolkit', 'Ant Design', 'React Router', 'Axios'],
       github: 'https://github.com/purplehays09',
       site: 'https://web-app-kappa-five.vercel.app',
-      image: '/public/Screenshot 2026-02-13 at 9.55.03 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.55.03 AM.png'
     },
     {
       title: 'Stateful Dice & Action Resolution Engine',
@@ -239,7 +239,7 @@ function Projects() {
       technologies: ['React', 'Redux', 'JavaScript', 'Probability Modeling', 'State Machines'],
       github: 'https://github.com/purplehays09/web-app/tree/main',
       site: 'https://web-app-kappa-five.vercel.app',
-      image: '/public/Screenshot 2026-02-13 at 9.56.19 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.56.19 AM.png'
     },
     {
       title: 'Checkout, Cart & ACH Payment Integration',
@@ -267,7 +267,7 @@ function Projects() {
       technologies: ['Ruby on Rails', 'React', 'Plaid API', 'ACH Payments', 'Payment Security', 'REST API'],
       github: 'https://github.com/purplehays09',
       site: 'https://menu.trippyhippiecannabis.com',
-      image: '/public/Screenshot 2026-02-13 at 9.59.41 AM.png'
+      image: '/Screenshot 2026-02-13 at 9.59.41 AM.png'
     }
   ];
 
