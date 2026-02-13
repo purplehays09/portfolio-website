@@ -8,9 +8,9 @@ const { Panel } = Collapse;
 function Projects() {
   const projects = [
     {
-      title: 'White-Label eCommerce Platform for Cannabis POS',
+      title: 'White-Label eCommerce Platform for Retail POS',
       subtitle: 'Ruby on Rails · React.js · Sinatra · CDN Distribution · WordPress Integration',
-      overview: 'I led and rebuilt a failed overseas initiative to deliver dynamic, white-label online menus for dispensaries using our POS system. The goal: transform in-store inventory data into a fully configurable, Shopify-style eCommerce experience that could be embedded into any client website. I took ownership of the entire stack — backend architecture, frontend application, data modeling, and deployment infrastructure.',
+      overview: 'I led and rebuilt a failed overseas initiative to deliver dynamic, white-label online menus for retailers using our POS system. The goal: transform in-store inventory data into a fully configurable, Shopify-style eCommerce experience that could be embedded into any client website. I took ownership of the entire stack — backend architecture, frontend application, data modeling, and deployment infrastructure.',
       technicalHighlights: [
         {
           title: 'Single-Engineer Full Stack Ownership',
@@ -31,8 +31,8 @@ function Projects() {
       ],
       impact: 'This project demonstrates product rescue, distributed system thinking, and scalable frontend delivery architecture. It moved the company from a failing implementation to a maintainable, white-label eCommerce platform.',
       technologies: ['Ruby on Rails', 'React.js', 'Sinatra', 'CDN', 'WordPress', 'JavaScript'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/f093fb/ffffff?text=eCommerce+Platform'
+      site: 'https://menu.trippyhippiecannabis.com',
+      image: '/public/Screenshot 2026-02-13 at 9.15.06 AM.png'
     },
     {
       title: 'Inventory Normalization & Product Aggregation Engine',
@@ -58,8 +58,8 @@ function Projects() {
       ],
       impact: 'This wasn\'t just a refactor. It was translating operational retail data into a customer-facing commerce model. It shows deep relational thinking and the ability to reconcile conflicting data paradigms inside a live production system.',
       technologies: ['Ruby on Rails', 'PostgreSQL', 'Data Modeling', 'SQL Optimization', 'Schema Design'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/667eea/ffffff?text=Inventory+Engine'
+      site: 'https://menu.trippyhippiecannabis.com',
+      image: '/public/Screenshot 2026-02-13 at 9.26.26 AM.png'
     },
     {
       title: 'AI-Powered Natural Language Action Engine',
@@ -89,8 +89,9 @@ function Projects() {
       ],
       impact: 'This project bridges NLP with deterministic game mechanics. It demonstrates real-world AI integration, cost optimization, error handling, and scalable backend design — not just API experimentation.',
       technologies: ['Ruby on Rails', 'OpenAI API', 'Service Objects', 'JSON Schema', 'REST API'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/667eea/ffffff?text=AI+Action+Engine'
+      github: 'https://github.com/purplehays09/rails-backend/tree/main',
+      site: 'https://web-app-kappa-five.vercel.app/demo',
+      image: '/public/Screenshot 2026-02-13 at 9.35.19 AM.png'
     },
     {
       title: 'Enterprise-Scale RPG Character Management System',
@@ -120,8 +121,9 @@ function Projects() {
       ],
       impact: 'This is SaaS-level backend complexity disguised as a game system. It shows deep understanding of relational modeling, transactional safety, performance considerations, and real-time architecture.',
       technologies: ['Ruby on Rails 6+', 'ActiveRecord', 'ActionCable', 'WebSockets', 'PostgreSQL'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/764ba2/ffffff?text=RPG+Management'
+      github: 'https://github.com/purplehays09/web-app/tree/main',
+      site: 'https://web-app-kappa-five.vercel.app',
+      image: '/public/Screenshot 2026-02-13 at 9.50.35 AM.png'
     },
     {
       title: 'Modular Seed Data & World-Building Pipeline',
@@ -147,8 +149,9 @@ function Projects() {
       ],
       impact: 'This project demonstrates systems thinking: encoding complex mechanics entirely as relational data. It\'s backend architecture, not just content seeding.',
       technologies: ['Ruby', 'Rails Seeds', 'PostgreSQL', 'Factory Patterns', 'Data Architecture'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/f093fb/ffffff?text=World+Building'
+      github: 'https://github.com/purplehays09/rails-backend/tree/main',
+      site: 'https://web-app-kappa-five.vercel.app',
+      image: '/public/Screenshot 2026-02-13 at 9.51.52 AM.png'
     },
     {
       title: 'Real-Time Multiplayer Campaign Dashboard',
@@ -174,8 +177,9 @@ function Projects() {
       ],
       impact: 'This is a production-ready real-time system. It proves I can manage concurrency, state synchronization, and event-driven UI architecture at scale.',
       technologies: ['React', 'Redux Toolkit', 'ActionCable', 'WebSockets', 'Ant Design'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/4facfe/ffffff?text=Campaign+Dashboard'
+      github: 'https://github.com/purplehays09/web-app/tree/main',
+      site: 'https://web-app-kappa-five.vercel.app',
+      image: '/public/Screenshot 2026-02-13 at 9.53.00 AM.png'
     },
     {
       title: 'Dynamic Multi-Step Character Creation Wizard',
@@ -202,7 +206,8 @@ function Projects() {
       impact: 'This project shows strong UX instincts layered on top of complex state management. It demonstrates the ability to simplify sophisticated systems for users without sacrificing flexibility.',
       technologies: ['React', 'Redux Toolkit', 'Ant Design', 'React Router', 'Axios'],
       github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/00f2fe/ffffff?text=Character+Wizard'
+      site: 'https://web-app-kappa-five.vercel.app',
+      image: '/public/Screenshot 2026-02-13 at 9.55.03 AM.png'
     },
     {
       title: 'Stateful Dice & Action Resolution Engine',
@@ -232,8 +237,9 @@ function Projects() {
       ],
       impact: 'This system translates abstract rule design into predictable, testable state transitions. It demonstrates algorithmic thinking and state machine design in a UI context.',
       technologies: ['React', 'Redux', 'JavaScript', 'Probability Modeling', 'State Machines'],
-      github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/43e97b/ffffff?text=Dice+Engine'
+      github: 'https://github.com/purplehays09/web-app/tree/main',
+      site: 'https://web-app-kappa-five.vercel.app',
+      image: '/public/Screenshot 2026-02-13 at 9.56.19 AM.png'
     },
     {
       title: 'Checkout, Cart & ACH Payment Integration',
@@ -260,7 +266,8 @@ function Projects() {
       impact: 'This shows production commerce engineering — payments, compliance considerations, customer identity management, and transaction consistency. It\'s the difference between building UI and building revenue infrastructure.',
       technologies: ['Ruby on Rails', 'React', 'Plaid API', 'ACH Payments', 'Payment Security', 'REST API'],
       github: 'https://github.com/purplehays09',
-      image: 'https://via.placeholder.com/400x250/00f2fe/ffffff?text=Payment+Integration'
+      site: 'https://menu.trippyhippiecannabis.com',
+      image: '/public/Screenshot 2026-02-13 at 9.59.41 AM.png'
     }
   ];
 
@@ -345,13 +352,26 @@ function Projects() {
                         </Panel>
                       </Collapse>
 
-                      <Button 
-                        type="primary"
-                        icon={<GithubOutlined />}
-                        onClick={() => window.open(project.github, '_blank')}
-                      >
-                        View on GitHub
-                      </Button>
+                      <Space>
+                        {project.github && (
+                          <Button 
+                            type="primary"
+                            icon={<GithubOutlined />}
+                            onClick={() => window.open(project.github, '_blank')}
+                          >
+                            View on GitHub
+                          </Button>
+                        )}
+                        {project.site && (
+                          <Button 
+                            type="default"
+                            icon={<LinkOutlined />}
+                            onClick={() => window.open(project.site, '_blank')}
+                          >
+                            View Site
+                          </Button>
+                        )}
+                      </Space>
                     </Col>
                   </Row>
                 </Card>
