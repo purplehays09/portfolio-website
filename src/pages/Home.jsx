@@ -58,7 +58,10 @@ function Home() {
       <Content style={{ padding: '0' }}>
         {/* Hero Section */}
         <div style={{
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          position: 'relative',
+          backgroundImage: 'url(/davidpassport.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
           minHeight: '50vh',
           display: 'flex',
           alignItems: 'center',
@@ -66,7 +69,18 @@ function Home() {
           textAlign: 'center',
           padding: '50px 20px'
         }}>
-          <div>
+          {/* Gradient overlay */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)',
+            zIndex: 1
+          }} />
+          
+          <div style={{ position: 'relative', zIndex: 2 }}>
             <Title level={1} style={{ color: 'white', fontSize: '3rem', marginBottom: '20px' }}>
               David Hays
             </Title>
