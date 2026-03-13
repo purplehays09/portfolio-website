@@ -6,8 +6,19 @@ const { Title, Paragraph, Text } = Typography;
 
 function Resume() {
   const handleDownload = () => {
-    // In a real application, this would download an actual PDF resume
-    alert('Resume download would start here. Please add your actual resume PDF to the public folder.');
+    // Google Drive document ID from the URL
+    const docId = '1rrl7Ooh5a12T0yz1vL51kw4MZS6sqp7tXD8CvS_0zC0';
+    // Export as PDF using Google Drive export URL
+    const downloadUrl = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+    
+    // Create a temporary link and trigger download
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = 'David_Hays_Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
